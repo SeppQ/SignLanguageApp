@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-signapp-dev-01621-authRole",
+      "UnauthRoleArn": "arn:aws:iam::151565159420:role/amplify-signapp-dev-01621-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::151565159420:role/amplify-signapp-dev-01621-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-signapp-dev-01621-deployment",
+      "UnauthRoleName": "amplify-signapp-dev-01621-unauthRole",
+      "StackName": "amplify-signapp-dev-01621",
+      "StackId": "arn:aws:cloudformation:eu-west-1:151565159420:stack/amplify-signapp-dev-01621/2fd45d30-74a3-11eb-b4e2-0a336076fc1d",
+      "AmplifyAppId": "dg8926srgwolq"
+    },
+    "categories": {
+      "auth": {
+        "signapp6940b419": {}
+      }
+    }
+  }
+}

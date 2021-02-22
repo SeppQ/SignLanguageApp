@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "signapp6940b419": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
