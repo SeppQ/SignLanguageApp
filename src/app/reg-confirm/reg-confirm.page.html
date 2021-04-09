@@ -1,0 +1,29 @@
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <!-- <img class="logo-img" center height="100" src="../../assets/logo.png"> -->
+  </div>
+</ion-header>
+<ion-content>
+
+  <div class="center">
+    <div heading-column-lr>
+      <h1 big-heading>Pleace Confirm Your Email .  Confirmation code was sent to your email.</h1>
+    </div>
+
+
+    <ion-item transparent>
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input placeholder="Enter Your Confirmation Code" ngModel #code="ngModel" name="code"></ion-input>
+    </ion-item>
+
+    <div class="linespace"></div>
+
+    <ion-button shape="round" class="shadow-red" color="danger" expand="full" (click)="confirmSignUp(code.value)"
+      class="ion-text-right">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      Confirm Email .
+    </ion-button>
+    <ion-label class="ion-text-center">Go Back? <a class="link-button" routerLink="/signup">Sign Up</a>
+    </ion-label>
+  </div>
+</ion-content>

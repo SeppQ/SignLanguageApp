@@ -1,0 +1,102 @@
+.login-header{
+    background-color: #181818;
+    
+    }
+    
+    .login-header{
+        position: relative;
+        background-color: #181818;
+        border-radius: 0em;
+    }
+    .login-header:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #181818;
+    border-bottom: 0;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    }
+    
+    .logo-img{
+     display: block;
+     width: 120px;
+     margin: 0 auto;
+     text-align: center;
+    }
+    [heading-column-lr]{
+        padding-top: 50px;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    [big-heading]{
+        font-family: "Heebo-Bold" !important;
+        font-size: 30px !important;
+        color: #000000;
+    }
+    [small-heading]{
+        font-family: "Heebo-Bold" !important;
+        margin-right: auto;
+        padding-left:40px;
+        font-size: 15px;
+    }
+    ion-label{
+        color:#000;
+        opacity: .8;
+        font-size: 13px;
+        display: block;
+    }
+    
+    ion-content{
+        --background: #5c5c5c;
+    }
+    [transparent]{
+        --background:transparent;
+    }
+    ion-input{
+        --color: #000;
+        --padding-bottom: 15px;
+        --padding-top: 15px;
+        --padding-start: 15px;
+        font-size: 15px;
+        text-indent: 1px;
+        padding-left: 10px !important;
+    }
+    ion-item{
+        --highlight-color-focused:transparent;
+        --highlight-color-invalid:#000;
+        --highlight-color-valid:red;
+        --min-height: 65px;
+        --padding-start:0;
+    }
+    ion-label{
+        color: #000000;
+        font-size: 13px;
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
+    .center{
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        -webkit-transform: translate(-49%,-49%);
+        transform: translate(-49%,-49%);
+        width: 90%;
+    }
+    .linespace{
+        height:  40px;
+    }
+
+    a{
+        color:red;
+    }
+    .shadow-red{
+        box-shadow: 0px 14px 25px rgba(182, 30, 30, 0.59);
+        border-radius: 5px;
+    }

@@ -1,0 +1,59 @@
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <!-- <img class="logo-img" center height="100" src="../../assets/logo.png"> -->
+  </div>
+</ion-header>
+
+<ion-content>
+  
+  <div class="center">
+    <div heading-column-lr>
+      <h1 small-heading>LOGIN</h1>
+      <h2 big-heading>Sign Up</h2>
+    </div>
+    <ion-label>
+      Sing Up And learn!
+    </ion-label>
+    <ion-label *ngIf="message != null">{{message.message}}</ion-label>
+    <ion-item transparent>
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-input ngModel name="email" #email="ngModel" placeholder="Enter Email"></ion-input>
+    </ion-item>
+   
+    <ion-item transparent>
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+      <ion-input ngModel name="username" #username="ngModel" placeholder="Enter Username"></ion-input>
+    </ion-item>
+
+    <ion-item transparent>
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input placeholder="Enter Password" ngModel #password="ngModel" name="password" type="password">
+      </ion-input>
+    </ion-item>
+    <!-- <ion-item transparent>
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-input placeholder="Repeat Password" ngModel appConfirmEqualValidator="password" #password2="ngModel"
+        name="repeatPassword" type="password">
+      </ion-input>
+      <div *ngIf="password2.invalid && (password2.dirty || password2.touched)" class="alert alert-danger">       
+        <div *ngIf="password2.errors.required">
+            Password is required.
+        </div>  
+        <div *ngIf="password2.errors.notEqual">               
+            Password Must Match !
+        </div>                              
+    </div>  
+    </ion-item> -->
+
+    <div class="linespace"></div>
+
+    <ion-button shape="round"  class="shadow-red" color="danger" expand="block"  (click)="signup(email,username,password)" class="ion-text-left">
+      <ion-icon slot="start" name="person-add-outline"></ion-icon>
+      Sing Up
+      <spna *ngIf="message == null" [routerLink]="['/reg-confirm', email.value]" ></spna>
+    </ion-button>
+
+    <ion-label class="ion-text-center">Have an Account? <a class="link-button" routerLink="/">Log In</a> </ion-label>
+
+  </div>
+</ion-content>

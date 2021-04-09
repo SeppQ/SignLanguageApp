@@ -6,5 +6,23 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "api": {
+    "signapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "sllapp.cdlru6kzk0vd.eu-west-1.rds.amazonaws.com"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
   }
 }

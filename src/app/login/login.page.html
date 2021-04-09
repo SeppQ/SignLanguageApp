@@ -1,0 +1,34 @@
+<ion-header no-border>
+  <div class="login-header ion-padding">
+    <!-- <img class="logo-img" center height="100" src="../../assets/logo.png"> -->
+   </div>
+</ion-header>
+<ion-content>
+ 
+<div  class="center">
+  <div heading-column-lr>
+    <h1 big-heading>Login</h1>
+    <h2 small-heading>SIGN UP</h2>
+  </div>
+  <ion-label>
+  Start Learning sign language!
+  </ion-label>
+  <ion-label *ngIf="message != null">{{message.message}}</ion-label>
+  <ion-item transparent>
+    <ion-icon slot="start" name="person-outline"></ion-icon>
+    <ion-input ngModel name="email" #email="ngModel" placeholder="Enter Email"></ion-input>
+  </ion-item>
+  <ion-item transparent>
+    <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+    <ion-input placeholder="Enter Password" ngModel #password="ngModel" name="password" type="password"></ion-input>
+  </ion-item>
+  <!-- <ion-label class="forget-password"><a>Forget Password?</a></ion-label> -->
+<div class="linespace"></div>
+
+  <ion-button shape="round"  class="shadow-red" color="danger" expand="full" (click)="signIn(email.value,password.value)" class="ion-text-right">
+    <ion-icon slot="start" name="person-outline"></ion-icon>
+    Log In
+  </ion-button>
+  <ion-label class="ion-text-center">Don't have an Account? <a class="link-button" routerLink="/signup">Sign Up</a> </ion-label>
+</div> 
+</ion-content>
