@@ -24,5 +24,11 @@
         }
       }
     }
+  },
+  "storage": {
+    "SignVideos": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

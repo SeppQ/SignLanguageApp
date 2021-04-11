@@ -16,7 +16,11 @@
 
   <div *ngIf="tutor != null">
     <div *ngFor="let tut of tutor">
-        <ion-button expand="block" color="danger">{{tut.Name}}</ion-button>
+        <ion-button shape="round"   color="danger" expand="full" routerLink="/tutorial" class="ion-text-right">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+          {{tut.Name}}
+        </ion-button>
+        <br>
     </div>
   </div>
 

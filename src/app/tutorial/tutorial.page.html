@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tutorial</ion-title>
+
+      <ion-back-button defaultHref="tabs" slot="start" color="danger"></ion-back-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >         <!-- [scrollEvents]="true" (ionScroll)="didScroll($event)">-->
+  <div class="ion-padding">
+        
+        <div *ngIf="video != null">
+          <video #player playsinline preload="auto/">
+            <source [src]="video" type="video/mp4"/>
+          </video>
+          <div class="bar">
+     
+            <ion-button (click)=play(player) color="danger" fill="clear">
+              <ion-icon slot="icon-only" name="play-circle-outline"></ion-icon>
+            </ion-button>
+            <ion-button (click)=pause(player) color="danger" fill="clear">
+              <ion-icon slot="icon-only" name="pause-circle-outline"></ion-icon>
+            </ion-button>
+            <ion-button (click)="openFullscreen(player)" color="danger" fill="clear">
+              <ion-icon slot="icon-only" name="open-outline"></ion-icon>
+            </ion-button>              
+          </div>
+        </div>
+        <ion-button shape="round"   color="danger" expand="full" routerLink="/game-page" class="ion-text-right">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+         Continue
+        </ion-button>
+  </div>
+
+
+
+</ion-content>

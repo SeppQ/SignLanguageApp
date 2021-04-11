@@ -17,6 +17,14 @@ const routes: Routes = [
   {
     path: 'reg-confirm/:email',
     loadChildren: () => import('./reg-confirm/reg-confirm.module').then( m => m.RegConfirmPageModule)
+  },
+  {
+    path: 'tutorial',
+    loadChildren: () => import('./tutorial/tutorial.module').then( m => m.TutorialPageModule)
+  },
+  {
+    path: 'game-page',
+    loadChildren: () => import('./game-page/game-page.module').then( m => m.GamePagePageModule)
   }
 ];
 @NgModule({
